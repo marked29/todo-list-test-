@@ -11,7 +11,7 @@ type TaskListProps = {
 
 // Task component to display individual task
 // It is memoized to prevent unnecessary re-renders.
-const Task = React.memo(({ id, name }: TaskProps) => {
+const Task = React.memo(({ name }: Omit<TaskProps, 'id'>) => {
   return (
     <li className="w-[900px] border-2 border-gray-300 p-4 mb-2 rounded">
       <h3>{name}</h3>

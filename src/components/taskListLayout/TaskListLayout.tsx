@@ -36,7 +36,7 @@ const TaskListLayout = () => {
             <input
               type="text"
               value={taskValue}
-              onChange={(e: any) => {
+              onChange={(e) => {
                 setTaskValue(e.target.value);
               }}
               placeholder="Set number:"

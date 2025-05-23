@@ -15,8 +15,6 @@ import { TaskProps } from '../components/taskList/TaskList';
  * @error - field that is used to display error messages.
  */
 
-const INITIAL_TASKS: TaskProps[] = [];
-
 // Function to check if the input value is valid. (in our case, it checks if the input value is not null, undefined or NaN)
 const isValid = (inputValue: any): boolean => inputValue !== null && inputValue !== undefined && !isNaN(inputValue);
 
@@ -27,8 +25,8 @@ const ERROR_MESSAGES = {
 };
 
 export const useTasks = () => {
-  const [tasks, setTasks] = useState(INITIAL_TASKS);
-  const [taskValue, setTaskValue] = useState<Number | any>(null);
+  const [tasks, setTasks] = useState([] as TaskProps[]);
+  const [taskValue, setTaskValue] = useState<number | any>(null);
   const [error, setError] = useState<string | null>(null);
 
   // Effect to manage error state.
