@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
+## Project Description
+
+Test project to add/remove numbers. It has hook that is responsible for main data manipulation and a simple UI component to display the data. 
+During development of this project I decided to have a hook that will be tied-up to the UI component that is responsible for displaying the data with a specific data type.
+
+Key Features:
+- Add new numbers with unique identifiers
+- Remove numbers by selecting or specifying them
+- Ready for further enhancements such as task completion, editing, or persistence
+
 ## Getting Started
 
 First, run the development server:
