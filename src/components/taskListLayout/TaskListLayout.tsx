@@ -32,7 +32,7 @@ const TaskListLayout = () => {
       <div className="w-full flex ">
         <div className="flex-col m-auto ">
           <TaskList tasks={tasks} />
-          <div className="flex items-center align-middle gap-4 mt-4">
+          <div className="flex align-middle gap-4 mt-4">
             <input
               type="text"
               value={taskValue}
@@ -40,7 +40,7 @@ const TaskListLayout = () => {
                 setTaskValue(e.target.value);
               }}
               placeholder="Set number:"
-              className="h-[100%] flex-1 text-black border-gray-500 p-4 rounded"
+              className="flex-1 text-black border-gray-500 p-4 rounded"
             />
             <button className="flex-1 bg-amber-800 border-2 border-gray-300 p-4 rounded" onClick={addTask}>
               add task
